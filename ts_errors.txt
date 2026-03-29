@@ -1,0 +1,30 @@
+src/App.tsx(23,9): error TS6133: 't' is declared but its value is never read.
+src/data/creditRates.ts(13,3): error TS2353: Object literal may only specify known properties, and 'relative' does not exist in type 'Record<LenderType, { annualRate: number; description: string; processingDays: number; collateral: string; }>'.
+src/data/festivals.ts(1,15): error TS2305: Module '"../types/game.types"' has no exported member 'StateCode'.
+src/data/proverbs.ts(3,14): error TS2741: Property 'en' is missing in type '{ hi: string[]; ta: string[]; te: string[]; bn: string[]; mr: string[]; gu: string[]; kn: string[]; pa: string[]; or: string[]; as: string[]; }' but required in type 'Record<Language, string[]>'.
+src/screens/CreditEngine/LoanComparison.tsx(1,10): error TS6133: 'useMemo' is declared but its value is never read.
+src/screens/CreditEngine/LoanComparison.tsx(10,9): error TS6133: 't' is declared but its value is never read.
+src/screens/Dashboard/FarmDashboard.tsx(1,1): error TS6133: 'useMemo' is declared but its value is never read.
+src/screens/Dashboard/FarmDashboard.tsx(5,1): error TS6133: 'MSP_RATES' is declared but its value is never read.
+src/screens/Dashboard/FarmDashboard.tsx(24,9): error TS6133: 'msp' is declared but its value is never read.
+src/screens/Dashboard/FarmDashboard.tsx(107,40): error TS6133: 'i' is declared but its value is never read.
+src/screens/Dashboard/HarvestDecision.tsx(1,1): error TS6133: 'motion' is declared but its value is never read.
+src/screens/Dashboard/HarvestDecision.tsx(6,10): error TS6133: 'fmt' is declared but its value is never read.
+src/screens/Dashboard/HarvestDecision.tsx(9,9): error TS6133: 't' is declared but its value is never read.
+src/screens/Dashboard/HarvestDecision.tsx(16,9): error TS6133: 'msp' is declared but its value is never read.
+src/screens/Dashboard/InputPurchase.tsx(2,1): error TS6133: 'motion' is declared but its value is never read.
+src/screens/Dashboard/InputPurchase.tsx(9,9): error TS6133: 't' is declared but its value is never read.
+src/screens/Dashboard/KCCDraw.tsx(8,9): error TS6133: 't' is declared but its value is never read.
+src/screens/Dashboard/LoanRepayment.tsx(1,10): error TS6133: 'useMemo' is declared but its value is never read.
+src/screens/Dashboard/LoanRepayment.tsx(9,9): error TS6133: 't' is declared but its value is never read.
+src/screens/Events/EventModal.tsx(4,1): error TS6133: 'GameEvent' is declared but its value is never read.
+src/screens/GoldenGodown/GoldenGodown.tsx(2,1): error TS6133: 'motion' is declared but its value is never read.
+src/screens/GoldenGodown/GoldenGodown.tsx(10,9): error TS6133: 't' is declared but its value is never read.
+src/screens/GoldenGodown/GoldenGodown.tsx(16,9): error TS6133: 'crop' is declared but its value is never read.
+src/screens/InsuranceShield/InsuranceShield.tsx(7,9): error TS6133: 't' is declared but its value is never read.
+src/screens/Onboarding/OnboardingFlow.tsx(6,48): error TS6196: 'LenderType' is declared but never used.
+src/screens/SeasonRecap/SeasonRecap.tsx(9,9): error TS6133: 't' is declared but its value is never read.
+src/screens/SeasonRecap/SeasonRecap.tsx(22,9): error TS6133: 'insurancePayout' is declared but its value is never read.
+src/types/crop.types.ts(1,15): error TS2305: Module '"./game.types"' has no exported member 'StateCode'.
+src/types/farmer.types.ts(1,15): error TS2305: Module '"./game.types"' has no exported member 'CropId'.
+src/types/farmer.types.ts(1,23): error TS2305: Module '"./game.types"' has no exported member 'StateCode'.

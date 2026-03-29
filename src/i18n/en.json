@@ -1,0 +1,126 @@
+{
+  "app": {
+    "title": "Anaj-Arth",
+    "subtitle": "Post-Harvest Decision Trainer",
+    "tagline": "Master your post-harvest journey"
+  },
+  "nav": {
+    "dashboard": "Farm Dashboard",
+    "godown": "Golden Godown",
+    "negotiation": "Mandi Negotiation",
+    "credit": "Credit Choice",
+    "insurance": "Insurance Shield"
+  },
+  "dashboard": {
+    "welcome": "Welcome, {{name}}",
+    "season": "Season {{number}}",
+    "cash": "Cash",
+    "grain": "Grain in Storage",
+    "debt": "Total Debt",
+    "stress": "Stress Level",
+    "quintals": "quintals",
+    "start_season": "Start New Season",
+    "continue_season": "Continue Season",
+    "select_crop": "Choose Your Crop",
+    "land": "Land Holding",
+    "acres": "acres",
+    "kcc_limit": "KCC Limit",
+    "phase": "Current Phase"
+  },
+  "phase": {
+    "Planning": "Planning",
+    "InputFinancing": "Input Financing",
+    "Sowing": "Sowing",
+    "Growing": "Growing",
+    "Harvest": "Harvest",
+    "PostHarvestDecision": "Post-Harvest Decision",
+    "Selling": "Selling",
+    "DebtSettlement": "Debt Settlement",
+    "Recap": "Season Recap"
+  },
+  "crop": {
+    "wheat": "Wheat",
+    "rice": "Rice",
+    "cotton": "Cotton",
+    "soybean": "Soybean",
+    "maize": "Maize",
+    "mustard": "Mustard",
+    "gram": "Gram (Chana)"
+  },
+  "risk": {
+    "drought": "Drought has struck — crops are wilting under the scorching sun.",
+    "flood": "Heavy flooding has damaged fields and roads.",
+    "hailstorm": "A hailstorm has battered your standing crop.",
+    "pest_attack": "Pests have infested your fields.",
+    "unseasonal_rain": "Unseasonal rain has affected harvest quality.",
+    "price_crash": "Market prices have crashed suddenly.",
+    "family_emergency": "A family emergency requires immediate cash.",
+    "festival_expense": "Festival season — community obligations require spending."
+  },
+  "stress": {
+    "low": "Relaxed",
+    "moderate": "Under Pressure",
+    "high": "Stressed",
+    "critical": "Crisis Mode"
+  },
+  "actions": {
+    "advance": "Continue",
+    "sell": "Sell Now",
+    "store": "Store in Warehouse",
+    "enroll_insurance": "Enroll in Crop Insurance",
+    "take_loan": "Take Loan",
+    "repay": "Repay Debt",
+    "new_game": "New Game",
+    "save": "Save Game"
+  },
+  "onboarding": {
+    "title": "Welcome to Anaj-Arth",
+    "subtitle": "Learn to make better post-harvest decisions",
+    "name_label": "Your Name",
+    "name_placeholder": "Enter your name",
+    "region_label": "Your Region",
+    "start": "Start Your Journey",
+    "language_label": "Language"
+  },
+  "negotiation": {
+    "narrator": { "welcome": "You arrive at the mandi with your harvest. The arhatiya approaches..." },
+    "arhatiya": {
+      "opening": "The quality isn't great this year. I can offer ₹{{price}} per quintal — take it or leave it.",
+      "market_down": "The market is down everywhere. Even this price is generous.",
+      "delay_threat": "If you don't sell today, you'll wait weeks for another buyer.",
+      "concede": "Alright, I can stretch to ₹{{price}}. Final offer."
+    },
+    "farmer": {
+      "ready": "I'm ready to negotiate",
+      "quote_msp": "The MSP is ₹{{msp}} — I know my rights",
+      "accept_low": "Okay, I'll take it",
+      "counter": "That's too low, I need more",
+      "show_enam": "I've checked eNAM — prices are higher online",
+      "alt_mandi": "I'll try another mandi",
+      "walk_away": "I'm walking away",
+      "use_enwr": "I'll store it in a warehouse instead",
+      "accept_mid": "Alright, deal",
+      "accept_fair": "That's fair, done",
+      "push_more": "I think I deserve a bit more"
+    },
+    "end": {
+      "low": "You sold at a low price. The arhatiya got the better deal.",
+      "mid": "You got an average price. Not bad, but room to improve.",
+      "fair": "Good negotiation! You secured a fair price.",
+      "good": "Excellent! You pushed hard and got above-market price.",
+      "walkaway": "You walked away. You can try another buyer or store your grain.",
+      "enwr": "Smart choice! You'll store your grain and sell when prices are better."
+    }
+  },
+  "credit": {
+    "kcc": "Kisan Credit Card — Government-subsidized loan at 7% annual interest",
+    "moneylender": "Moneylender — Instant cash but 36% annual interest",
+    "nbfc": "NBFC — Moderate rates at 18% annual interest"
+  },
+  "insurance": {
+    "recommend": {
+      "high_risk": "Given the weather and crop risk, insurance is strongly recommended.",
+      "low_risk": "Risk is low this season, but insurance provides peace of mind."
+    }
+  }
+}

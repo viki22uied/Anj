@@ -1,0 +1,146 @@
+import type { CropData } from '../../types/crop.types';
+
+export const CROP_BASE_DATA: Record<string, CropData> = {
+  wheat: {
+    id: 'wheat', nameKey: 'crops.wheat', season: 'rabi',
+    sowingMonths: [11, 12], harvestMonths: [3, 4],
+    states: ['PB', 'HR', 'UP', 'MP', 'RJ', 'UK', 'HP', 'JK'],
+    baseYield: 45, yieldVariance: 8, baseMSP: 2275, baseMarketPrice: 2100, peakSeasonalPrice: 2600,
+    inputCostPerHectare: 20000, storageRisk: 'low',
+    pests: ['Aphids', 'Karnal bunt', 'Yellow rust', 'Termites'],
+    disasters: ['Hailstorm', 'Untimely rain at harvest', 'Cold wave'],
+    warehouseEligible: true, minimumWarehouseLot: 10,
+    gradeFactors: [
+      { name: 'Moisture content', maxAllowed: '14%', failureConsequence: 'Price cut 5–10% or rejection' },
+      { name: 'Damaged grains', maxAllowed: '3%', failureConsequence: 'Grade downgrade' },
+      { name: 'Foreign matter', maxAllowed: '1%', failureConsequence: 'Price cut 3%' },
+      { name: 'Shriveled grains', maxAllowed: '5%', failureConsequence: 'Grade downgrade' },
+    ],
+  },
+  paddy: {
+    id: 'paddy', nameKey: 'crops.paddy', season: 'kharif',
+    sowingMonths: [6, 7], harvestMonths: [10, 11],
+    states: ['PB', 'HR', 'UP', 'WB', 'AS', 'OD', 'BR', 'TN', 'AP', 'TS', 'KA'],
+    baseYield: 40, yieldVariance: 10, baseMSP: 2183, baseMarketPrice: 1900, peakSeasonalPrice: 2500,
+    inputCostPerHectare: 22000, storageRisk: 'medium',
+    pests: ['Stem borer', 'BPH', 'Blast'],
+    disasters: ['Flood', 'Drought', 'Cyclone'],
+    warehouseEligible: true, minimumWarehouseLot: 10,
+    gradeFactors: [
+      { name: 'Moisture content', maxAllowed: '14%', failureConsequence: 'Price cut or rejection' },
+      { name: 'Broken grains', maxAllowed: '5%', failureConsequence: 'Grade downgrade' },
+    ],
+  },
+  cotton: {
+    id: 'cotton', nameKey: 'crops.cotton', season: 'kharif',
+    sowingMonths: [5, 6], harvestMonths: [10, 11, 12],
+    states: ['MH', 'GJ', 'TS', 'AP', 'HR', 'RJ', 'MP', 'PB'],
+    baseYield: 12, yieldVariance: 4, baseMSP: 6620, baseMarketPrice: 5800, peakSeasonalPrice: 7500,
+    inputCostPerHectare: 30000, storageRisk: 'medium',
+    pests: ['Pink bollworm', 'Spodoptera', 'Whitefly', 'Thrips'],
+    disasters: ['Untimely rain', 'Drought'],
+    warehouseEligible: true, minimumWarehouseLot: 5,
+    gradeFactors: [
+      { name: 'Moisture content', maxAllowed: '8%', failureConsequence: 'Rejection' },
+      { name: 'Trash content', maxAllowed: '3%', failureConsequence: 'Price cut 20%' },
+    ],
+  },
+  mustard: {
+    id: 'mustard', nameKey: 'crops.mustard', season: 'rabi',
+    sowingMonths: [10, 11], harvestMonths: [2, 3],
+    states: ['RJ', 'MP', 'HR', 'UP', 'WB', 'GJ'],
+    baseYield: 15, yieldVariance: 4, baseMSP: 5650, baseMarketPrice: 5200, peakSeasonalPrice: 6800,
+    inputCostPerHectare: 15000, storageRisk: 'low',
+    pests: ['Aphids', 'Alternaria blight'],
+    disasters: ['Hailstorm', 'Frost'],
+    warehouseEligible: true, minimumWarehouseLot: 10,
+    gradeFactors: [
+      { name: 'Moisture', maxAllowed: '8%', failureConsequence: 'Rejection' },
+      { name: 'Oil content', maxAllowed: 'Min 40%', failureConsequence: 'Price cut' },
+    ],
+  },
+  gram: {
+    id: 'gram', nameKey: 'crops.gram', season: 'rabi',
+    sowingMonths: [10, 11], harvestMonths: [2, 3],
+    states: ['MP', 'RJ', 'MH', 'UP', 'KA', 'AP'],
+    baseYield: 12, yieldVariance: 3, baseMSP: 5440, baseMarketPrice: 4800, peakSeasonalPrice: 6200,
+    inputCostPerHectare: 12000, storageRisk: 'low',
+    pests: ['Pod borer', 'Wilt'],
+    disasters: ['Hailstorm', 'Untimely rain'],
+    warehouseEligible: true, minimumWarehouseLot: 10,
+    gradeFactors: [
+      { name: 'Moisture', maxAllowed: '10%', failureConsequence: 'Rejection' },
+      { name: 'Damaged grains', maxAllowed: '3%', failureConsequence: 'Grade downgrade' },
+    ],
+  },
+  maize: {
+    id: 'maize', nameKey: 'crops.maize', season: 'kharif',
+    sowingMonths: [6, 7], harvestMonths: [9, 10],
+    states: ['KA', 'RJ', 'MP', 'BR', 'MH', 'UP', 'AP'],
+    baseYield: 35, yieldVariance: 8, baseMSP: 2090, baseMarketPrice: 1800, peakSeasonalPrice: 2400,
+    inputCostPerHectare: 14000, storageRisk: 'medium',
+    pests: ['Fall armyworm', 'Stem borer'],
+    disasters: ['Drought', 'Waterlogging'],
+    warehouseEligible: true, minimumWarehouseLot: 10,
+    gradeFactors: [
+      { name: 'Moisture', maxAllowed: '14%', failureConsequence: 'Rejection' },
+    ],
+  },
+  soybean: {
+    id: 'soybean', nameKey: 'crops.soybean', season: 'kharif',
+    sowingMonths: [6, 7], harvestMonths: [10, 11],
+    states: ['MP', 'MH', 'RJ'],
+    baseYield: 14, yieldVariance: 4, baseMSP: 4600, baseMarketPrice: 4200, peakSeasonalPrice: 5500,
+    inputCostPerHectare: 16000, storageRisk: 'low',
+    pests: ['Girdle beetle', 'Semilooper'],
+    disasters: ['Excess rain', 'Drought'],
+    warehouseEligible: true, minimumWarehouseLot: 10,
+    gradeFactors: [
+      { name: 'Moisture', maxAllowed: '12%', failureConsequence: 'Rejection' },
+    ],
+  },
+  onion: {
+    id: 'onion', nameKey: 'crops.onion', season: 'rabi',
+    sowingMonths: [10, 11], harvestMonths: [2, 3, 4],
+    states: ['MH', 'MP', 'KA', 'GJ', 'HR', 'RJ'],
+    baseYield: 250, yieldVariance: 50, baseMSP: 800, baseMarketPrice: 1200, peakSeasonalPrice: 4000,
+    inputCostPerHectare: 35000, storageRisk: 'very_high',
+    pests: ['Purple blotch', 'Thrips', 'Stemphylium blight'],
+    disasters: ['Excess rain at harvest', 'Price crash', 'Transport strike'],
+    warehouseEligible: false, minimumWarehouseLot: 0,
+    gradeFactors: [
+      { name: 'Rot/damage', maxAllowed: '2%', failureConsequence: 'Rejection at mandi' },
+      { name: 'Size uniformity', maxAllowed: 'N/A', failureConsequence: 'Price discount 20%' },
+    ],
+  },
+  tomato: {
+    id: 'tomato', nameKey: 'crops.tomato', season: 'kharif',
+    sowingMonths: [6, 7], harvestMonths: [9, 10, 11],
+    states: ['MH', 'KA', 'AP', 'MP', 'GJ'],
+    baseYield: 300, yieldVariance: 80, baseMSP: 500, baseMarketPrice: 800, peakSeasonalPrice: 5000,
+    inputCostPerHectare: 40000, storageRisk: 'very_high',
+    pests: ['Fruit borer', 'Leaf curl virus'],
+    disasters: ['Price crash', 'Excess rain'],
+    warehouseEligible: false, minimumWarehouseLot: 0,
+    gradeFactors: [
+      { name: 'Damage', maxAllowed: '5%', failureConsequence: 'Rejection' },
+    ],
+  },
+  sugarcane: {
+    id: 'sugarcane', nameKey: 'crops.sugarcane', season: 'kharif',
+    sowingMonths: [2, 3], harvestMonths: [11, 12, 1, 2],
+    states: ['UP', 'MH', 'KA', 'TN', 'BR'],
+    baseYield: 700, yieldVariance: 100, baseMSP: 315, baseMarketPrice: 310, peakSeasonalPrice: 350,
+    inputCostPerHectare: 45000, storageRisk: 'high',
+    pests: ['Top borer', 'Wooly aphid'],
+    disasters: ['Drought', 'Waterlogging'],
+    warehouseEligible: false, minimumWarehouseLot: 0,
+    gradeFactors: [
+      { name: 'Sucrose content', maxAllowed: 'Min 9%', failureConsequence: 'Price cut' },
+    ],
+  },
+};
+
+export function getCropForState(stateCode: string): CropData[] {
+  return Object.values(CROP_BASE_DATA).filter(c => c.states.includes(stateCode as any));
+}

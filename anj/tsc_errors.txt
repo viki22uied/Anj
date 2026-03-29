@@ -1,0 +1,6 @@
+﻿src/ui/screens/FarmDashboard.tsx(20,11): error TS2339: Property 'state' does not exist on type 'GameStore'.
+src/ui/screens/FarmDashboard.tsx(20,18): error TS2339: Property 'startSeason' does not exist on type 'GameStore'.
+src/ui/screens/FarmDashboard.tsx(20,31): error TS2339: Property 'advance' does not exist on type 'GameStore'.
+src/ui/screens/FarmDashboard.tsx(20,40): error TS2339: Property 'save' does not exist on type 'GameStore'.
+src/ui/screens/FarmDashboard.tsx(20,46): error TS2339: Property 'summary' does not exist on type 'GameStore'.
+src/ui/screens/OnboardingScreen.tsx(17,11): error TS2339: Property 'newGame' does not exist on type 'GameStore'.
