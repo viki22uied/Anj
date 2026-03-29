@@ -44,46 +44,66 @@ The game progresses in weekly turns and seasons.
 - **Mini-games**: short activities for learning by doing
 - **Accessible mobile UI**: large tap targets, clear cards, motion transitions
 
-### Tech stack
+### Tech Stack & Dependencies
 
-- **Frontend**: React + TypeScript + Vite
-- **UI**: Tailwind CSS + custom theme in `src/index.css`
-- **Animation**: Framer Motion
-- **State**: Zustand with persistence
-- **Localization**: i18next + react-i18next
-- **PWA**: `vite-plugin-pwa` and Workbox caching
+The project is built using a modern, performant web stack designed for offline-first capabilities:
 
-### Run locally
+- **Core Framework**: React 19.2.4
+- **Language**: TypeScript (v5.9.3)
+- **Build Tool**: Vite 8.0.1
+- **Styling**: Tailwind CSS 3.4.19 (with Autoprefixer and PostCSS)
+- **State Management**: 
+  - Zustand 5.0.12 (Global state with persistence)
+  - XState 5.29.0 (Complex game logic and state machines)
+- **Animations**: Framer Motion 12.38.0
+- **Database (Offline)**: PouchDB 9.0.0
+- **Localization**: i18next 25.10.10 + react-i18next 16.6.6
+- **PWA Support**: vite-plugin-pwa (via Workbox 7.4.0)
+- **Charts**: Recharts 3.8.1
 
-Install dependencies
+### Local Setup Instructions
 
+Follow these steps to get the environment running on your machine:
+
+**Step 1: Clone the repository**
+```bash
+git clone https://github.com/viki22uied/Anj.git
+cd Anj
+```
+
+**Step 2: Install dependencies**
+Make sure you have Node.js installed on your system.
 ```bash
 npm install
 ```
 
-Start the dev server
-
+**Step 3: Run the development server**
+This will start the app locally with hot-reloading.
 ```bash
 npm run dev
 ```
+By default, the app will be available at `http://localhost:5173`.
 
-Build
-
+**Step 4: Build for production (Optional)**
+To create a production-ready bundle in the `dist/` folder:
 ```bash
 npm run build
 ```
 
-Preview production build
-
+**Step 5: Preview the build (Optional)**
+To test the production build locally:
 ```bash
 npm run preview
 ```
 
-Lint
+### Testing Credentials
 
-```bash
-npm run lint
-```
+**Login Required**: No.
+
+Anaj-Arth is designed to be accessible and focuses on simulation. There is no traditional login or authentication system. 
+
+- **How to Start**: Simply open the application and choose your preferred language (English or Hindi) to start the onboarding flow. 
+- **Data Persistence**: The app uses `PouchDB` and `Zustand` persistence to save your game progress locally in your browser's indexedDB. Clearing your browser data will reset the simulation.
 
 ### How the app is structured (developer overview)
 
